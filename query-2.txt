@@ -112,8 +112,8 @@ Join
 ●    Prendi i dati di fatturazione per la prenotazione con id=7
       SELECT *
       FROM prenotazioni
-      INNER JOIN pagamenti
-      ON prenotazioni.id = pagamenti.prenotazione_id 
+      JOIN pagamenti
+      ON prenotazioni.id = pagamenti.prenotazione_id
       WHERE prenotazione_id = 7
 
 
